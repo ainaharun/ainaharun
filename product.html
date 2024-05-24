@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PRIME - Product</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+        }
+        body {
+            font-family: "Montserrat", sans-serif;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0); 
+            margin: 0;
+            padding: 0;
+            background-color: #00000000;
+            background-image: url('https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /
+        }
+        header {
+            background-color: #00000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        body {
+    color: rgb(255, 255, 255);
+        }
+        h1, h2, p {
+    color: rgb(255, 255, 255);
+        }
+        nav {
+  width: 100%;
+  background-color: #00000000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 10px;
+  display: block;
+}
+
+
+nav ul li a:hover {
+  background-color: #000000;
+}
+
+.move-downward {
+    margin-top: 4px;
+}
+
+.invisible-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+.invisible-table th, .invisible-table td {
+    border: none; 
+    padding: 10px; 
+    text-align: center;
+    vertical-align: top;
+}
+
+.invisible-table th {
+    font-size: 30px; 
+    text-align: center; 
+}
+
+.centered-content {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centered-content img {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 50%;
+    height: auto;
+}
+
+.spacer-row {
+    height: 20px;
+}
+.centered-content p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.centered-text {
+  text-align: center;
+}
+.fade-element {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bounce-element {
+    animation: bounce 3s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+        section {
+            flex: 1;
+            padding: 20px;
+            margin: 20px;
+            background-color: #000000;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #00000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+    </style>
+</head>
+<div class="fade-element">
+<p style="text-align: center;">
+  <a href="https://drinkprime.com/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Prime_Hydration_logo.png" width="130" height="Auto">
+  </p>
+<nav>
+    <ul>
+      <div class="logo">
+        <a href="/"><img src="https://i.ibb.co/VxkYPTk/logo-prime.png" alt=".logo"width="65" height="Auto"></a>
+      </div>
+  <li><a href="home.html"><b>HOME</b></a></li>
+  <li><a href="about.html"><b>ABOUT</b></a></li>
+  <li><a href="product.html"><b>PRODUCT</b></a></li>
+    </ul>
+  </nav>
+<body>
+  <table class="invisible-table">
+    <tr>
+        <th>HYDRATION</th>
+        <th>HYDRATION+ STICKS</th>
+        <th>ENERGY</th>
+    </tr>
+    <tr>
+        <td>
+          <div class="bounce-element">
+            <div class="centered-content">
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_IcePop_0000_400x.png?v=1656076690">
+              <p class="title">Ice Pop</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/CherryFreeze-Front_2_400x.png?v=1703182111">
+              <p class="title">Cherry Freeze</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/Prime-Metamoon-ProductDetail-front_400x.png?v=1662754165">
+              <p class="title">Meta Moon</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/SBHydrationFront_400x.png?v=1708725252">
+              <p class="title">Strawberry Banana</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/Front_400x.png?v=1672937745">
+              <p class="title">Strawberry Watermelon</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/BottleFront_400x.png?v=1684170611">
+              <p class="title">Lemonade</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_bluerasberry_0000_400x.png?v=1656076581">
+              <p class="title">Blue Raspberry</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_tropicalpunch_0000_400x.png?v=1656076860">
+              <p class="title">Tropical Punch</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_lemonlime_0000_400x.png?v=1656076731">
+              <p class="title">Lemon Lime</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_grape_0000_400x.png?v=1656076642">
+              <p class="title">Grape</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/PrimeHydration_1serve_orange_0000_400x.png?v=1656076788">
+              <p class="title">Orange</p>
+            </div>
+        </td>
+        <td>
+          <div class="bounce-element">
+            <div class="centered-content">
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/icepopfront_200x.png?v=1689355849">
+              <p class="title">Ice Pop</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/Sticks-Front_200x.png?v=1692627504">
+              <p class="title">Glowberry</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/CherryFreezeSticks-Front_200x.png?v=1703014280">
+              <p class="title">Cherry Freeze</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/SBSticksFront_200x.png?v=1708725353">
+              <p class="title">Strawberry Banana</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/swsticksfront_200x.png?v=1689354735">
+              <p class="title">Strawberry Watermelon</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/Front_d82f78ae-d75a-4217-abe8-c5634b509cc6_200x.png?v=1684162721">
+              <p class="title">Lemonade</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/blueraspfront_200x.png?v=1689355779">
+              <p class="title">Blue Raspberry</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/tropicalpunchfront_a6faea76-059b-4e96-8790-5cbca56476ff_200x.png?v=1689355970">
+              <p class="title">Tropical Punch</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/lemonlimefront_d2ea6aec-50d9-49a2-95d4-7c88fdeebcc4_200x.png?v=1689355911">
+              <p class="title">Lemon Lime</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/products/Front_996bb20b-0d7c-4c3b-8616-30a1b754807f_200x.png?v=1694787483">
+              <p class="title">Meta Moon</p>
+            </div>
+        </td>
+        <td>
+          <div class="bounce-element">
+            <div class="centered-content">
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_IcePop_0000_400x.png?v=1697573703">
+              <p class="title">Ice Pop</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/Original-Front_400x.png?v=1695912906">
+              <p class="title">Original</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_StrawberryWatermelon_0000_400x.png?v=1697573852">
+              <p class="title">Strawberry Watermelon</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_BlueRaspberry_0000_400x.png?v=1697567577">
+              <p class="title">Blue Raspberry</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_TropicalPunch_0000_400x.png?v=1697573897">
+              <p class="title">Tropical Punch</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_OrangeMango_0000_400x.png?v=1697573803">
+              <p class="title">Orange Mango</p>
+              <p class="spacer-row"></p class>
+              <img src= "https://drinkprime.com/cdn/shop/files/PRIME_energy_1serve_LemonLime_0000_400x.png?v=1697573752">
+              <p class="title">Lemon Lime</p>
+            </div>
+          </div>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+        <footer>
+            <p> Copyright &copy; 2024 Design by Aina Harun.</p>
+        </footer>
+</html>

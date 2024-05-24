@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIME - Home</title>
+    <style>
+         html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+        }
+        body {
+            font-family: "Montserrat", sans-serif;
+            text-shadow: 2px 4px 5px rgb(0, 0, 0); 
+            margin: 0;
+            padding: 0;
+            background-color: #00000000;
+            background-image: url('https://images.unsplash.com/photo-1545431766-45ff67845191?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /
+        }
+        header {
+            background-color: #00000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        body {
+    color: rgb(255, 255, 255);
+        }
+        h1, h2, p {
+    color: rgb(255, 255, 255);
+        }
+        h2 {
+    text-align: center;
+        }
+
+        .logo {
+    float: left; 
+}
+        nav {
+  width: 100%;
+  background-color: #00000000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+}
+
+.header {
+    position: relative;
+    height: 670px; 
+    overflow: hidden; 
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; 
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 65px; 
+    left: 50px; 
+    font-weight: bold; 
+    text-shadow: 2px 4px 5px gold; 
+    letter-spacing: 2.7px; 
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 30px; 
+}
+
+.overlay-text h1 {
+    margin: 100;
+    font-size: 45.2px;
+    
+}
+.overlay-text p {
+    margin: 10;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+
+.column {
+    flex: 1;
+}
+
+.column img {
+    max-width: 100%;
+    display: block;
+}
+
+.text-column li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.text-column {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-column li::before {
+    content: "●"; /* Bullet point character */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgb(255, 255, 255);
+}
+
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.custom-table td {
+    border: 3px solid white;
+    padding: 5px;
+    text-align: center;
+}
+
+.custom-table img {
+  max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+    width: 90px; 
+    height: auto; 
+}
+
+.spacer-row {
+    height: 20px;
+}
+
+.fade-element {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #00000000;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #00000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<div class="fade-element">
+<div class="header">
+  <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLkb0EQpRegI/v1/-1x-1.jpg" class="header-image" alt="Header Image" width="700" height="auto">
+<p style="text-align: center;">
+  <a href="https://drinkprime.com/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Prime_Hydration_logo.png" width="130" height="Auto">
+</a></p>
+<nav>
+    <ul>
+        <div class="logo">
+            <a href="/"><img src="https://i.ibb.co/VxkYPTk/logo-prime.png" alt=".logo"width="65" height="Auto"></a>
+          </div>
+      <li><a href="home.html"><b>HOME</b></a></li>
+      <li><a href="about.html"><b>ABOUT</b></a></li>
+      <li><a href="product.html"><b>PRODUCT</b></a></li>
+    </ul>
+  </nav>
+  <div class="overlay-text">
+    <h1>UNLEASH YOUR PRIME!</h1>
+    <p>A Range of Sports Drinks, Drink Mixes, and Energy</p>
+    <p>Drinks. Created and Marketed by Prime Hydration</p>
+</div>
+</div>
+        <body>
+          <p class="spacer-row"></p class>
+          <div class="container">
+            <div class="column">
+                <img src="https://d2j6dbq0eux0bg.cloudfront.net/images/63146/3049407301.jpg" alt="Image 1">
+                <p class="spacer-row"></p class>
+                <img src="https://drinkprime.com/cdn/shop/files/icepopcombo_1200x.png?v=1689355860" alt="Image 2">
+            </div>
+            <div class="column">
+                <div class="text-column">
+                    <h1>HYDRATION</h1>
+                    <li>10% Coconut Water</li>
+                    <li>Caffeine Free</li>
+                    <li>834mg Electrolytes</li>
+                    <li>B Vitamins</li>
+                    <li>Antioxidants</li>
+                    <p class="spacer-row"></p class>
+                        <p class="spacer-row"></p class>
+                      <h1>HYDRATION+</h1>
+                      <li>10% Coconut Water</li>
+                      <li>Caffeine Free</li>
+                      <li>834mg Electrolytes</li>
+                      <li>B Vitamins</li>
+                      <li>Antioxidants</li>
+                </div>
+            </div>
+            <div class="column">
+                <img src="https://my99protein.com/cdn/shop/products/PRIME-cans-group_600x_01ec3972-274d-4c14-bf76-a2071287c51f.webp?v=1678643391" alt="Image 3">
+            </div>
+            <div class="column">
+                <div class="text-column">
+                  <p class="spacer-row"></p class>
+                    <h1>ENERGY</h1>
+                    <li>Caffeine</li>
+                    <li>Electrolytes</li>
+                    <li>Zero Sugar</li>
+                    <li>Vegan</li>
+                </div>
+            </div>
+        </div>
+        <p class="spacer-row"></p class>
+          <h2>MEET THE PRIME TEAM</h2>
+        <table class="custom-table">
+          <tr>
+              <td><a href="https://www.wwe.com/" target="_blank"><img src="https://pngfre.com/wp-content/uploads/Wwe-3.png" alt="Image 1"></a></td>
+              <td><a href="https://www.arsenal.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png" alt="Image 2"></a></td>
+              <td><a href="https://www.fcbarcelona.com/en/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/pt/thumb/4/43/FCBarcelona.svg/1010px-FCBarcelona.svg.png" alt="Image 3"></a></td>
+              <td><a href="https://fcbayern.com/en" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/1200px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png" alt="Image 4"></a></td>
+              <td><a href="https://www.ufc.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/UFC_Logo.svg/1200px-UFC_Logo.svg.png" alt="Image 5"></a></td>
+          </tr>
+          <tr>
+              <td><a href="https://www.nba.com/raptors/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Toronto_Raptors_logo.svg/1200px-Toronto_Raptors_logo.svg.png" alt="Image 6"></a></td>
+              <td><a href="https://www.nba.com/lakers/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/1200px-Los_Angeles_Lakers_logo.svg.png" alt="Image 7"></a></td>
+              <td><a href="https://www.bvb.de/eng" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Borussia_Dortmund_logo.svg/1200px-Borussia_Dortmund_logo.svg.png" alt="Image 8"></a></td>
+              <td><a href="https://kingsleague.pro/es/americas" target="_blank"><img src="https://www.futbolemotion.com/imagescontenidos/kingsleague/logos/kings_league.png" alt="Image 9"></a></td>
+              <td><a href="https://www.mlb.com/dodgers" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Los_Angeles_Dodgers_Logo.svg/1200px-Los_Angeles_Dodgers_Logo.svg.png" alt="Image 10"></a></td>
+          </tr>
+      </table>
+        </body>
+        </div>
+    <footer>
+      <p> Copyright &copy; 2024 Design by Aina Harun.</p>
+    </footer>
+</body>
+</html>

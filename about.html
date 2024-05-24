@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PRIME - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+        }
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00000000;
+            background-image: url('https://images.unsplash.com/photo-1548159417-f283998827c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /
+        }
+        header {
+            background-color: #00000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        body {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 5px rgb(0, 0, 0); 
+
+        }
+        h1, h2, p {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 5px rgb(0, 0, 0); 
+        }
+
+        nav {
+  width: 100%;
+  background-color: #00000000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 30px;
+  padding: 10px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #000000;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+}
+
+.invisible-table {
+    width: 85%;
+    border-collapse: collapse;
+    border-spacing: 20px;
+}
+
+.invisible-table th, .invisible-table td {
+    border: none; 
+    padding: 10px; 
+    text-align: center;
+    vertical-align: top;
+}
+
+.invisible-table th {
+    font-size: 30px; 
+    text-align: center; 
+}
+
+.text-column {
+    width: 50%;
+    vertical-align: top;
+}
+
+.image-column {
+    width: 50%;
+    vertical-align: top;
+}
+
+.centered-content {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spacer-row {
+    height: 20px;
+}
+.spacer-row-pic {
+    height: 0px;
+}
+
+.centered-content p {
+    margin: 5px 0;
+    text-align: center;
+}
+.centered-text {
+  text-align: center;
+}
+
+.image-with-border {
+        border: 3px solid rgb(255, 255, 255); 
+        border-radius: 5px; 
+        display: inline-block;
+}
+
+.polaroid {
+        position: relative;
+        max-width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .polaroid img {
+        width: 93%;
+        display: block;
+        border: 10px solid #fff;
+        border-bottom: 10px solid #ccc;
+        border-radius: 10px;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 10px;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        border-radius: 0 0 10px 10px;
+    }
+    .overlay p {
+        margin: 0;
+    }
+.learn-more {
+    background-color: rgb(197, 245, 183); 
+    padding: 15px;
+    border-radius: 10px; 
+    display: inline-block; 
+    border: 3px solid #2bb306;
+}
+
+.learn-more a {
+    color: #2bb306;
+    text-decoration: none;
+    text-shadow: 2px 4px 5px rgba(255, 217, 0, 0); 
+
+}
+.learn-more:hover {
+        background-color: #ffffff;
+}
+
+.image-container {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px; 
+    }
+
+    .image-container:hover .overlay {
+        opacity: 0.5;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        cursor: pointer;
+    }
+
+    .image-link {
+        display: block;
+    }
+
+    .fade-element {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    0%, 100% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #00000000;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #00000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+    </style>
+</head>
+<div class="fade-element">
+<p style="text-align: center;">
+    <a href="https://drinkprime.com/" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Prime_Hydration_logo.png" width="130" height="Auto">
+  </p>
+<nav>
+    <ul>
+        <div class="logo">
+            <a href="/"><img src="https://i.ibb.co/VxkYPTk/logo-prime.png" alt=".logo"width="65" height="Auto"></a>
+          </div>
+      <li><a href="home.html"><b>HOME</b></a></li>
+      <li><a href="about.html"><b>ABOUT</b></a></li>
+      <li><a href="product.html"><b>PRODUCT</b></a></li>
+    </ul>
+  </nav>
+<body>
+    <header>
+      <h1>About PRIME</h1>
+      <div class="image-container">
+        <a href="https://www.dazn.com/en-MY/sport/Sport:2x2oqzx60orpoeugkd754ga17" target="_blank">
+        <img class="image-with-border" src="https://www.tubefilter.com/wp-content/uploads/2023/07/logan-paul-ksi-boxing.jpg" alt="boy" class="w3-image" width="520" height="auto">
+        <div class="overlay"></div>
+    </a>
+</div>
+<div class="image-container">
+        <a href="https://fcbayern.com/en/news/2023/08/prime" target="_blank">
+            <img class="image-with-border" src="https://img.fcbayern.com/image/upload/t_cms-16x9-seo-thumbnail/v1691594117/cms/public/images/fcbayern-com/homepage/Saison-23-24/Partner/230810-prime-partnerschaft-paul-ksi-fcb.png" alt="boy" class="w3-image" width="550" height="auto">
+            <div class="overlay"></div>
+        </a>
+    </div>
+    </header>
+    <body>
+      <p class="spacer-row"></p class>
+      <div class="table-container">
+      <table class="invisible-table">
+        <tr>
+            <th>INTRODUCTION</th>
+            <th>KSI & LOGAN PAUL</th>
+        </tr>
+        <tr>
+            <td class="text-column">
+                  <p>PRIME was developed to fill the void where great taste meets function. With bold, thirst-quenching flavors to help you refresh, replenish, and refuel, PRIME is the perfect boost for any endeavor. We're confident you'll love it as much as we do.</p>
+                  <p class="spacer-row"></p class>
+                  <p>We created PRIME to showcase what happens when rivals come together as brothers and business partners to fill the void where great taste meets function.  </p>
+                  <p>We dropped our first product, PRIME Hydration in 2022 and since then, we've continued to work countless hours to expand in retailers, reach new markets and formulate new products we know you'll love. </p>
+                  <p>We’ve been humbled by the process of creating a real brand & surpassing some of the biggest beverage companies in the world. As underdogs, we always cherish the opportunity to show the world what’s possible. </p>
+                  <p>Now that we’re both fighting for the same team, we truly believe the sky is the limit.</p>
+                  <p class="spacer-row"></p class>
+                  <p>⁃ KSI & Logan Paul</p>
+                  </td>
+                  
+                  <td class="image-column">
+                  <section class="image-section">
+                    <div class="image-box">
+                        <div class="polaroid">
+                        <a href="https://en.wikipedia.org/wiki/KSI" target="_blank">
+                        <img src="https://shopatshowcaseusa.com/cdn/shop/files/glowberry_0003_Layer27_1200x.jpg?v=1695323234" alt="KSI" width="350" height="auto"></a>
+                        <p class="spacer-row-pic"></p class>
+                            <div class="learn-more">
+                                <a href="https://www.instagram.com/ksi/?hl=en" target="_blank"><b>LEARN MORE</b></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="spacer-row"></p class>
+                    <div class="image-box">
+                        <div class="polaroid">
+                        <a href="https://en.wikipedia.org/wiki/Logan_Paul" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/71Tcx5gokSL.jpg" alt="Logan" width="350" height="auto"></a>
+                        <p class="spacer-row-pic"></p class>
+                            <div class="learn-more">
+                                <a href="https://www.instagram.com/loganpaul/?hl=en" target="_blank"><b>LEARN MORE</b></a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </td>
+        </tr>
+        </table>
+      </div>
+    </div>
+      </body>
+        <footer>
+            <p1> Copyright &copy; 2024 Design by Aina Harun.</p1>
+        </footer>
+</html>
